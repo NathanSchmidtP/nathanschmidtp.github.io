@@ -1,0 +1,5 @@
+div.body {
+    max-width: 74ch;
+    text-align: justify;
+    margin: 0 auto;
+}

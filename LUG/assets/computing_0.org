@@ -1,0 +1,64 @@
+COMPUTING ATTEMPT #0: CONTROL BY DIRECT MEMORY ACCESS
+
+| Addr. Name | Addr. | Memory Contents | Comments                                |
+|------------+-------+-----------------+-----------------------------------------|
+|            |     0 | LOAD 5          | Load value at addr 5 into ALU           |
+|            |     1 | ADD 6           | Add value at addr 6 to value in ALU     |
+|            |     2 | STORE result    | Store value in ALU to result (addr 7)   |
+|            |     3 | OUT result      | Output the value at addr result         |
+|            |     4 | HALT            | Stop the program                        |
+|            |     5 | 1               |                                         |
+|            |     6 | 2               |                                         |
+| result     |     7 |                 | Blank contents implies undef init value |
+
+| Instruction         | Description                                             |
+|---------------------+---------------------------------------------------------|
+| ADD x               | Add the value at address x to the value in the ALU      |
+|---------------------+---------------------------------------------------------|
+| SUBT x              | Subtract the value at address x                         |
+|                     | to the value in the ALU                                 |
+|---------------------+---------------------------------------------------------|
+| ADDI p              | Add the value at the address                            |
+|                     | stored at p to the value in the ALU                     |
+|---------------------+---------------------------------------------------------|
+| CLEAR               | Set the value in the ALU to 0                           |
+|---------------------+---------------------------------------------------------|
+| LOAD x              | Set the value in the ALU to the value at address x      |
+|---------------------+---------------------------------------------------------|
+| STORE x             | Set the value at address x to the value in the ALU      |
+|---------------------+---------------------------------------------------------|
+| INPUT x             | Poll the input buffer for an input. If an input         |
+|                     | is present, address x is set to its value and           |
+|                     | the next instruction is skipped.If no input             |
+|                     | is present, go to the next instruction.                 |
+|---------------------+---------------------------------------------------------|
+| OUTPUT x            | Output the value at address x                           |
+|---------------------+---------------------------------------------------------|
+| JUMP x              | Set the program counter to point at address x           |
+|---------------------+---------------------------------------------------------|
+| SKIP                | Skip the next instruction if                            |
+|                     | the ALU is not of value zero                            |
+|---------------------+---------------------------------------------------------|
+| JnS x               | Store the value of the program                          |
+|                     | counter at address x. Set the program                   |
+|                     | counter to point at address x+1.                        |
+|---------------------+---------------------------------------------------------|
+| JUMPI p             | Jump to address stored at address p                     |
+|---------------------+---------------------------------------------------------|
+| STOREI p            | Store the value in the ALU at                           |
+|                     | the address stored in address p                         |
+|---------------------+---------------------------------------------------------|
+| LOADI p             | Load the value at the address                           |
+|                     | stored at address p into the ALU                        |
+|---------------------+---------------------------------------------------------|
+| CONSW10 proc_struct | Allows the process described in proc_struct to execute  |
+|                     | ten ops while the program counter is above proc_struct. |
+|                     | On interrupt, ALU value and program counter value is    |
+|                     | saved to the proc_struct.                               |
+|                     |                                                         |
+|                     | Executing "CONSW10 0" checks and clears user interupts  |
+|                     | and skips the next instruction if none are present.     |
+|---------------------+---------------------------------------------------------|
+| HALT                | Stop executing commands and                             |
+|                     | incrementing the program counter                        |
+

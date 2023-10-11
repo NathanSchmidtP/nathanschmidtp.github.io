@@ -1,0 +1,28 @@
+COMPUTING ATTEMPT #1: PROGRAM BOOTSTRAPPING
+
+| Addr. Name    | Addr. | Memory Contents     | Comments                          |
+|---------------+-------+---------------------+-----------------------------------|
+|               |     0 | LOAD size           | Load num of words left to read in |
+|               |     1 | SKIP                | If num is zero, jump to           |
+|               |     2 | JUMP done_loading   | done_loading for exit routine     |
+|               |     3 | IN prog_chunk       | Else, busywait until a word is    |
+|               |     4 | JUMP 3              | entered by the user, then go to 5 |
+|               |     5 | LOAD prog_chunk     | Put entered word into ALU and     |
+|               |     6 | STOREI prog_ptr     | store at address at prog_ptr      |
+|               |     7 | LOAD prog_ptr       |                                   |
+|               |     8 | ADD one             | Increment address word stored to  |
+|               |     9 | STORE prog_ptr      |                                   |
+|               |    10 | LOAD size           | Decrement size value to keep      |
+|               |    11 | SUBT one            | keep track of num of words left   |
+|               |    12 | STORE size          |                                   |
+|               |    13 | JUMP 0              | Repeat the reading of words       |
+| done_loading  |    14 | LOAD skip_bootstrap | Load the "JUMP 23" instruction to |
+|               |    15 | STORE 0             | the ALU and store it at address 0 |
+|               |    16 | CLEAR               |                                   |
+|               |    17 | JUMP 0              | Goto 0 for redirection to program |
+| one           |    18 | 1                   | Defined for +1 and -1 operations  |
+| prog_chunk    |    19 |                     |                                   |
+| prog_ptr      |    20 | 23                  |                                   |
+| skip_bootsrap |    21 | JUMP 23             | Programs can be handled as data   |
+| size          |    22 | 7                   | Number of words to be loaded      |
+|               |    23 |                     |                                   |

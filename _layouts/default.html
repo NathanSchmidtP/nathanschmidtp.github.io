@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body style="background: #EEEEEE;">
+    <nav>
+      <a href="/"><h1 style="text-align: center;">Nathan's home page</h1></a>
+      <h2 style="text-align: center;">{{ page.title }}</h2>
+      <div style="text-align: center; width: 100%; font-weight: bold;">
+	<a href="/Programming/program.html">Programming</a> |
+	<a href="/Electronics/electronics.html">Electronics</a> |
+	<a href="/Mathematics/math.html">Mathematics</a> |
+	<a href="/Hacking/hack.html">General Hacking</a> |
+	<a href="/LUG/lug.html">Linux User Group</a> |
+	<a href="/Vehicle/ride.html">Vehicle Related</a>
+      </div>
+    </nav>
+    <hr>
+    {{ content }}
+    <hr><br>
+    <div style="text-align: center;">
+      <a href="https://fsf.org"><img src="/assets/img/901926.png" alt="FSF!" border="0" width="160" height="50"><br>
+	<strong>Support Free Software</strong>
+      </a><br><br>
+      <a href="https://eff.org"><img src="https://www.eff.org/files/eff-banner.png" alt="EFF!" border="0" width="160" height="50"><br>
+	<strong>Support Free Speech & Privacy</strong>
+      </a>
+    </div>
+  </body>
+</html>

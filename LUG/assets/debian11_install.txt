@@ -1,0 +1,19 @@
+btrfs-progs \
+emacs vim ed gawk gawk-doc \
+gcc gcc-doc glibc-doc g++ libboost-all-dev libboost-doc \
+guile-3.0 guile-3.0-dev guile-3.0-libs guile-3.0-doc guile-library \
+racket racket-doc ghc ghc-doc haskell-doc default-jdk default-jre \
+python3 python3-doc python3-numpy python-numpy-doc python3-scipy \
+python-scipy-doc python3-matplotlib python-matplotlib-doc octave octave-doc \
+git-all make make-doc cmake cmake-doc automake autoconf autoconf-doc \
+libtool libtool-doc m4 m4-doc binutils binutils-doc gdb \
+gdb-doc valgrind diffutils diffutils-doc gnu-standards \
+libncurses-dev ncurses-doc readline-common libreadline-dev readline-doc \
+gmp-doc libgmp10-doc libmpfr-dev libmpfr-doc plotutils libplot-dev \
+info mpv texlive-full groff graphviz graphviz-doc gnuplot gnuplot-doc \
+xfig xfig-libs xfig-doc gimp gimp-data-extras gimp-help-en \
+inkscape inkscape-tutorials krita krita-data blender blender-data \
+ffmpeg ffmpeg-doc imagemagick imagemagick-doc qrencode zbar-tools libzbar-dev \
+freecad freecad-common calculix-ccx calculix-ccx-doc \
+openscad openscad-mcad slic3r repetier-host \
+parallel keepassx oathtool xclip curl cowsay youtube-dl

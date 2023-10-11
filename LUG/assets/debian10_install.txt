@@ -1,0 +1,15 @@
+emacs vim ed \
+gcc g++ libboost-all-dev gdb valgrind ghc gawk gnat gfortran \
+mit-scheme mit-scheme-doc guile-2.2 guile-2.2-dev guile-2.2-doc \
+python3-scipy python-scipy-doc python3-numpy python-numpy-doc \
+python3-pandas python3-sympy python3-matplotlib python3-serial \
+python-serial python3-skimage python3-pythonmagick \
+default-jdk default-jre octave octave-doc \
+bison flex autoconf automake binutils binutils-doc make m4 groff \
+kicad kicad-doc-en kicad-packages3d \
+freecad openscad librecad slic3r repetier-host \
+texinfo texlive-full libpaper1 plotutils libplot-dev \
+graphviz graphviz-doc libgraphviz-dev libgv-guile \
+ghostscript imagemagick xfig gimp gimp-data-extras gimp-help-en \
+inkscape inkscape-tutorials pstoedit blender krita \
+ffmpeg git xclip curl cowsay parallel keepassx oathtool

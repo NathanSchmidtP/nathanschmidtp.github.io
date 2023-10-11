@@ -1,0 +1,64 @@
+COMPUTING ATTEMPT #2: RESIDENT MONITOR
+
+| Addr. Name | Addr. | Memory Contents    | Comments                                 |
+|------------+-------+--------------------+------------------------------------------|
+|            |     0 | IN response        | Busywaits until user enters word, then   |
+|            |     1 | JUMP 0             | IN moves program counter past JUMP to 2  |
+|            |     2 | LOAD response      | Loads user response into ALU register    |
+|            |     3 | SKIP               |                                          |
+|            |     4 | JUMP load_mem      | If response 0 jump to load_mem           |
+|            |     5 | SUBT one           | Else, decrement by one (defined below)   |
+|            |     6 | SKIP               |                                          |
+|            |     7 | JUMP erase_mem     | If response 1 (now 0) jump to erase_mem  |
+|            |     8 | SUBT one           |                                          |
+|            |     9 | SKIP               |                                          |
+|            |    10 | JUMP start_proc    | If response 2 (now 0) jump to start_proc |
+| prompt     |    11 | CLEAR              |                                          |
+|            |    12 | STORE response     | Set ALU register and response to zero    |
+|            |    13 | JUMP 0             | before jumping back for user input       |
+| one        |    14 | 1                  | Addr one initalized to 1 for ease of     |
+| response   |    15 |                    | incrementing and decrementing            |
+|            |    16 |                    |                                          |
+| load_mem   |    17 | IN alloc_addr      | User enters first address to store data  |
+|            |    18 | JUMP load_mem      |                                          |
+|            |    19 | IN alloc_size      | User enters number of words to be stored |
+|            |    20 | JUMP load_mem + 2  |                                          |
+|            |    21 | LOAD alloc_addr    | A copy of the entered regions first      |
+|            |    22 | STORE proc_addr    | address is stored at proc_addr           |
+|            |    23 | LOAD alloc_size    |                                          |
+|            |    24 | SKIP               | If the remaining number of words to      |
+|            |    25 | JUMP prompt        | store is 0, return to the user prompt    |
+|            |    26 | SUBT one           |                                          |
+|            |    27 | STORE alloc_size   | Else, decrement and store the value      |
+|            |    28 | IN alloc_temp      |                                          |
+|            |    29 | JUMP load_mem + 11 | Read in next value to a temp address     |
+|            |    30 | LOAD alloc_temp    | before loading it into the ALU register  |
+|            |    31 | STOREI alloc_addr  | to store at address stored at alloc_addr |
+|            |    32 | LOAD alloc_addr    |                                          |
+|            |    33 | ADD one            | Increment the point where inputs are     |
+|            |    34 | STORE alloc_addr   | being stored at                          |
+|            |    35 | JUMP load_mem + 6  | Continue reading in words to memory      |
+| alloc_size |    36 |                    |                                          |
+| alloc_addr |    37 |                    |                                          |
+| alloc_temp |    38 |                    |                                          |
+|            |    39 |                    |                                          |
+| erase_mem  |    40 | IN erase_addr      | User enters first address to be erased   |
+|            |    41 | JUMP erase_mem     |                                          |
+|            |    42 | IN erase_size      | User enters number of words to be erased |
+|            |    43 | JUMP erase_mem + 2 |                                          |
+|            |    44 | LOAD erase_size    | If the number of words to erase is 0,    |
+|            |    45 | SKIP               | return back to the prompt for user input |
+|            |    46 | JUMP prompt        |                                          |
+|            |    47 | SUBT one           | Else, decrement words left to erase      |
+|            |    48 | STORE erase_size   |                                          |
+|            |    49 | CLEAR              | Set the ALU register to 0                |
+|            |    50 | STOREI erase_addr  | Store 0 at address held at erase_addr    |
+|            |    51 | LOAD erase_addr    | Increment the address to the next        |
+|            |    52 | ADD one            | address to be erased                     |
+|            |    53 | STORE erase_addr   |                                          |
+|            |    54 | JUMP erase_mem + 4 | Continue erasing words in memory         |
+| erase_addr |    55 |                    |                                          |
+| erase_size |    56 |                    |                                          |
+|            |    57 |                    |                                          |
+| start_proc |    58 | JUMPI proc_addr    | Set program counter to the address       |
+| proc_addr  |    59 |                    | stored at proc_addr                      |
