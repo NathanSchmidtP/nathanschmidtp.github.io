@@ -7,7 +7,7 @@ title: Programming
     My main interest area tends to be hardware control and interfacing.
     However I frequently cross over into other areas when I find interesting problems.
     Such problems include my <a href="../Mathematics/math.html">mathematics projects</a>
-    and extend as far out as to biological physics.
+    and extend as far out as biological physics.
   </p>
 </div>
 <div class="body">
@@ -50,7 +50,7 @@ title: Programming
     <li><a href="https://www.arduino.cc/en/Tutorial/ArduinoISP">ArduinoISP and Bootloader explanations</a></li>
     <li><a href="https://www.arduino.cc/en/Hacking/ParallelProgrammer">Make a Parallel Programmer</a></li>
     <li><a href="https://web.archive.org/web/20061212161422/http://www.captain.at:80/electronics/atmel-programmer/">Make an older Parallel Programmer</a></li>
-    <li><a href="/Hacking/pumpkin.c">A simplistic program of mine that displays "Pumpkin Error"</a></li>
+    <li><a href="/Hacking/pumpkin.c">A simplistic program that displays "Pumpkin Error"</a></li>
   </ol>
 </div>
 <div style="text-align: center;" class="body">
