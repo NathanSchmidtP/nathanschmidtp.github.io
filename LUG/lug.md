@@ -16,12 +16,12 @@ title: GNU/Linux
     <a href="./assets/debian12_install.txt">Here</a> are a number of programs I add to a fresh install of Debian 12 (Bookworm) before I get to work. Note that many of them are for niche applications, so if you want to use this, be aware that precious MB of disk space may be taken up by libraries that you may never use.
   </p>
   <p>
-    <a href="./assets/debian11_install.txt">Here</a>
-    is the list I used for Debian 11 (Bullseye),
-    <a href="./assets/debian10_install.txt">here</a>
-    is the list I used for Debian 10 (Buster), and
-    <a href="./assets/debian9_install.txt">here</a>
-    is the list I used for Debian 9 (Jessie).
+    Here are the packages I have used on previous versions of Debian:
+    <ul>
+      <li><a href="./assets/debian11_install.txt">Debian 11 (Bullseye)</a></li>
+      <li><a href="./assets/debian10_install.txt">Debian 10 (Buster)</a></li>
+      <li><a href="./assets/debian9_install.txt">Debian 9 (Jessie)</a></li>
+    </ul>
   </p>
   <h3 style="text-align: center;">Proto-Operating System in MARIE</h3>
   <h5 style="text-align: center;">(A 2018 CedarLUG Presentation I Gave)</h5>
