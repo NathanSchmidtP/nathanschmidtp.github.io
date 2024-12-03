@@ -9,7 +9,7 @@ title: Vehicles
   </p>
 </div>
 <div style="text-align: center;" class="body">
-  <h3 style="text-align: center;">CL-125 1974 Honda Scrambler</h3>
+  <h3 style="text-align: center;">Honda CL-125 Scrambler (1974)</h3>
   <a href="./assets/img/honda125s.JPG"><img src="./assets/img/thumb_honda125s.JPG"></a><br>
   <p><i>When on-road off-road bikes had chrome</i></p>
 </div>
@@ -48,4 +48,9 @@ title: Vehicles
     and see how much wear had occurred throughout the engine.
     Even after 10,000 miles it looks like it could ride on forever.
   </p>
+</div>
+<div style="text-align: center;" class="body">
+  <h3 style="text-align: center;">Kawasaki KLR 650 (2023)</h3>
+  <a href="./assets/img/kawasaki_klr650-new.jpg"><img src="./assets/img/thumb_kawasaki_klr650-new.jpg"></a><br>
+  <p><i>Yet to be broken in</i></p>
 </div>
