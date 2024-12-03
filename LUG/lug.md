@@ -13,10 +13,12 @@ title: GNU/Linux
   </p>
   <h3 style="text-align: center;">Additional Programs For Debian</h3>
   <p>
-    <a href="./assets/debian11_install.txt">Here</a> are a number of programs I add to a fresh install of Debian 11 (Bullseye) before I get to work. Some of them are currently "experimental" in that I'm in the process of judging if one or another is more desirable. Most of them, however, are known to be very useful. Note that many of them are for niche applications, so if you want to use this, be aware that precious MB of disk space may be taken up by libraries that you may never use.
+    <a href="./assets/debian12_install.txt">Here</a> are a number of programs I add to a fresh install of Debian 12 (Bookworm) before I get to work. Note that many of them are for niche applications, so if you want to use this, be aware that precious MB of disk space may be taken up by libraries that you may never use.
   </p>
   <p>
-    <a href="./assets/debian10_install.txt">Here</a>
+    <a href="./assets/debian11_install.txt">Here</a>
+    is the list I used for Debian 11 (Bullseye),
+    <a href="./assets/debian10_install.txt">here</a>
     is the list I used for Debian 10 (Buster), and
     <a href="./assets/debian9_install.txt">here</a>
     is the list I used for Debian 9 (Jessie).
