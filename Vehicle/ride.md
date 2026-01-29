@@ -53,5 +53,30 @@ title: Vehicles
   <h3 style="text-align: center;">Kawasaki KLR 650 (2023)</h3>
   <a href="./assets/img/kawasaki_klr650-new.jpg"><img src="./assets/img/thumb_kawasaki_klr650-new.jpg" width="500" height="380"></a><br>
   <p><i>Fresh from the Kawasaki dealership</i></p>
-  
+</div>
+<div style="text-align: center;" class="body">
+  <p>
+  <strong>Mileage so far (January 2026): 21,360</strong><br>
+  <strong>Average miles per day: 36</strong>
+  </p>
+</div>
+<div class="body">
+  <p>
+  I think I can confidently say I started riding
+  "seriously" after getting my KLR.
+  I decided to buy it after my employer at the time
+  requested I, as a remote worker, commute once per
+  week with compensation for mileage.
+  As I lived over a hundred miles away from their location,
+  I figured that the mileage compensation would be just about
+  enough to rent a car and pay for gas;
+  <emph>however,</emph> it would also be over three times
+  as much as a payment for a brand-new KLR.
+  </p>
+  <p>
+  It seemed quite obvious that riding through the countryside
+  on a brand new motorcycle - where the act of doing so paid
+  for the it and then some - was preferable to renting a car,
+  so that's what I ended up doing.
+  </p>
 </div>
