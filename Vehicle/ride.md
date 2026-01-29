@@ -10,7 +10,7 @@ title: Vehicles
 </div>
 <div style="text-align: center;" class="body">
   <h3 style="text-align: center;">Honda CL-125 Scrambler (1974)</h3>
-  <a href="./assets/img/honda125s.JPG"><img src="./assets/img/thumb_honda125s.JPG"></a><br>
+  <a href="./assets/img/honda125s.JPG"><img src="./assets/img/thumb_honda125s.JPG" width="500" height="380"></a><br>
   <p><i>When on-road off-road bikes had chrome</i></p>
 </div>
 <div class="body">
@@ -51,6 +51,7 @@ title: Vehicles
 </div>
 <div style="text-align: center;" class="body">
   <h3 style="text-align: center;">Kawasaki KLR 650 (2023)</h3>
-  <a href="./assets/img/kawasaki_klr650-new.jpg"><img src="./assets/img/thumb_kawasaki_klr650-new.jpg"></a><br>
-  <p><i>Yet to be broken in</i></p>
+  <a href="./assets/img/kawasaki_klr650-new.jpg"><img src="./assets/img/thumb_kawasaki_klr650-new.jpg" width="500" height="380"></a><br>
+  <p><i>Fresh from the Kawasaki dealership</i></p>
+  
 </div>
