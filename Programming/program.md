@@ -20,7 +20,7 @@ title: Programming
   As an example, the entire implementation of tiny-machine's fetch-execute cycle is shown below.
   This includes the definition of all seventeen instructions in the Tiny Machine language:
 </div>
-<div style="max-width: 72ch; text-align:justify; margin: 0 auto;">
+<div style="max-width: 84ch; text-align:justify; margin: 0 auto;">
   <script src="https://gitlab.com/schminak/tiny-machine/-/snippets/2411747.js"></script>
 </div>
 <div class="body">
