@@ -76,7 +76,7 @@ title: Vehicles
   <p>
   It seemed quite obvious that riding through the countryside
   on a brand new motorcycle - where the act of doing so paid
-  for the it and then some - was preferable to renting a car,
+  for it and then some - was preferable to renting a car,
   so that's what I ended up doing.
   </p>
 </div>
